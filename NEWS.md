@@ -29,8 +29,7 @@
 * Standardized dataset messages: download messages now include split information, success messages show image count and class count for consistency.
 * fix `model_fasterrcnn_*` did not provide boxes output normalized to image size, did not manage batches, fix performance of the `roi_align()` function (#284)
 * fix rf100 collection bounding-box now consider the correct native COCO format being 'xywh' (#272)
-* Remove `.getbatch` method from MNIST as it is providing inconsistent tensor dimensions with `.getitem` due
-to non-vectorized `transform_` operations (#264)
+* Remove `.getbatch` method from MNIST as it is providing inconsistent tensor dimensions with `.getitem` due\nto non-vectorized `transform_` operations (#264)\n* Fixed typos and inconsistencies in documentation: WHOI Small Coralnet dataset title/description, RF100 vignette function names (search_rf100 → search_collection, get_rf100_catalog → get_collection_catalog), spelling (disease, etc.) (@BLACKBOXAI)."
 
 # torchvision 0.8.0
 

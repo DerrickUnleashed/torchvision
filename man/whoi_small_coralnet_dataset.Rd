@@ -2,7 +2,7 @@
 % Please edit documentation in R/dataset-plankton.R
 \name{whoi_small_coralnet_dataset}
 \alias{whoi_small_coralnet_dataset}
-\title{Coralnet Dataset}
+\title{WHOI Small Coralnet Dataset\n#'\n#' The WHOI Small Coralnet dataset is an image \strong{classification dataset}\n#' of very large submarine coral reef images annotated into 3 classes\n#' and produced by  \href{https://coralnet.ucsd.edu}{CoralNet},\n#' a resource for benthic images classification.}
 \usage{
 whoi_small_coralnet_dataset(
   split = "val",
@@ -21,10 +21,7 @@ whoi_small_coralnet_dataset(
 \item{download}{Logical. If TRUE, downloads the dataset to \verb{root/}. If the dataset is already present, download is skipped.}
 }
 \description{
-Small Coralnet dataset is an image \strong{classification dataset}
-of very large submarine coral reef images annotated into 3 classes
-and produced by  \href{https://coralnet.ucsd.edu}{CoralNet},
-a resource for benthic images classification.
+WHOI Small Coralnet Dataset\n#'\n#' The WHOI Small Coralnet dataset is an image \strong{classification dataset}\n#' of very large submarine coral reef images annotated into 3 classes\n#' and produced by  \href{https://coralnet.ucsd.edu}{CoralNet},\n#' a resource for benthic images classification.
 }
 \seealso{
 Other classification_dataset: 

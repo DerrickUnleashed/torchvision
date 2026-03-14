@@ -176,12 +176,7 @@ whoi_plankton_dataset <- torch::dataset(
 )
 
 
-#' Coralnet Dataset
-#'
-#' Small Coralnet dataset is an image **classification dataset**
-#' of very large submarine coral reef images annotated into 3 classes
-#' and produced by  [CoralNet](https://coralnet.ucsd.edu),
-#' a resource for benthic images classification.
+#' WHOI Small Coralnet Dataset\n#'\n#' The WHOI Small Coralnet dataset is an image **classification dataset**\n#' of very large submarine coral reef images annotated into 3 classes\n#' and produced by  [CoralNet](https://coralnet.ucsd.edu),\n#' a resource for benthic images classification.
 #'
 #' @inheritParams whoi_plankton_dataset
 #' @family classification_dataset

@@ -35,32 +35,18 @@ The easiest way to find datasets is using the search functions:
 library(torchvision)
 
 # Search for specific topics
-search_rf100("cell")        # Find cell-related datasets
-search_rf100("solar")       # Find solar panel datasets
-search_rf100("x-ray")       # Find X-ray datasets
+search_collection("cell")        # Find cell-related datasets
+search_collection("solar")       # Find solar panel datasets
+search_collection("x-ray")       # Find X-ray datasets
 
-# List all datasets in a collection
-search_rf100(collection = "biology")
-search_rf100(collection = "medical")
-
-# View complete catalog
-catalog <- get_rf100_catalog()
-View(catalog)
-```
+\n# List all datasets in a collection\nsearch_collection(collection = "biology")\nsearch_collection(collection = "medical")\n\n# View complete catalog\ncatalog <- get_collection_catalog()\nView(catalog)\n```
 
 ## Example: Finding a Photovoltaic Dataset
 
 One of the motivations for this catalog was answering questions like: *"Is there a photovoltaic dataset in torchvision?"*
 
 ```{r eval=FALSE}
-# Search for solar/photovoltaic datasets
-search_rf100("solar")
-search_rf100("photovoltaic")
-
-# Result shows:
-# - solar_panel in infrared collection
-# - solar_panel in damage collection
-```
+\n# Search for solar/photovoltaic datasets\nsearch_collection("solar")\nsearch_collection("photovoltaic")\n\n# Result shows:\n# - solar_panel in infrared collection\n# - solar_panel in damage collection\n```
 
 ## Complete Catalog
 
@@ -70,11 +56,7 @@ Here's the complete catalog of all RF100 datasets:
 library(torchvision)
 library(knitr)
 
-catalog <- get_rf100_catalog()
-
-# Display key columns
-kable(catalog[, c("collection", "dataset", "description", "total_size_mb", "estimated_images")])
-```
+\ncatalog <- get_collection_catalog()\n\n# Display key columns\nkable(catalog[, c("collection", "dataset", "description", "total_size_mb", "estimated_images")])\n```
 
 ## Collections
 
@@ -82,9 +64,7 @@ kable(catalog[, c("collection", "dataset", "description", "total_size_mb", "esti
 
 Microscopy and biological imaging datasets for research and diagnostics:
 
-```{r eval=FALSE}
-search_rf100(collection = "biology")
-```
+\n```{r eval=FALSE}\nsearch_collection(collection = "biology")\n```
 
 **Available datasets:**
 
@@ -93,10 +73,10 @@ search_rf100(collection = "biology")
 - `parasite`: Parasite detection in microscopy images
 - `cell`: General cell detection in microscopy
 - `bacteria`: Bacteria detection in microscopy images
-- `cotton_desease`: Cotton plant disease detection
+`cotton_disease`: Cotton plant disease detection
 - `mitosis`: Mitosis phase detection in cell images
 - `phage`: Bacteriophage detection in microscopy
-- `liver_desease`: Liver disease pathology detection
+`liver_disease`: Liver disease pathology detection
 
 ### Medical Collection (8 datasets)
 
