@@ -10,6 +10,7 @@
 <url><loc>/articles/examples/style-transfer.html</loc></url>
 <url><loc>/articles/examples/texture-nca.html</loc></url>
 <url><loc>/articles/examples/tinyimagenet-alexnet.html</loc></url>
+<url><loc>/articles/examples/visualization-utilities.html</loc></url>
 <url><loc>/articles/index.html</loc></url>
 <url><loc>/articles/rf100-datasets.html</loc></url>
 <url><loc>/authors.html</loc></url>
@@ -60,6 +61,7 @@
 <url><loc>/reference/item_transform_random_crop.html</loc></url>
 <url><loc>/reference/item_transform_random_erasing.html</loc></url>
 <url><loc>/reference/item_transform_random_horizontal_flip.html</loc></url>
+<url><loc>/reference/item_transform_random_perspective.html</loc></url>
 <url><loc>/reference/item_transform_random_resize_crop.html</loc></url>
 <url><loc>/reference/item_transform_random_rotation.html</loc></url>
 <url><loc>/reference/item_transform_random_vertical_flip.html</loc></url>
